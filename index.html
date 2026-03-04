@@ -1947,26 +1947,6 @@
             });
         });
     </script>
-     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш-ключ-если-нужен&lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
-        ymaps.ready(init);
-        function init() {
-            var myMap = new ymaps.Map("yandex-map", {
-                center: [55.765833, 37.607222], // Координаты Тверской, 15
-                zoom: 16,
-                controls: ['zoomControl', 'fullscreenControl']
-            });
-            
-            var myPlacemark = new ymaps.Placemark([55.765833, 37.607222], {
-                hintContent: 'Салон красоты ELEGANCE',
-                balloonContent: 'ул. Тверская, 15'
-            }, {
-                preset: 'islands#roseIcon', // Розовая иконка под цвет сайта
-                iconColor: '#D4A5A5'
-            });
-            
-            myMap.geoObjects.add(myPlacemark);
-        }
-    </script>
+     
 </body>
 </html>
